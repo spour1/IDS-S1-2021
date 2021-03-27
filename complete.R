@@ -17,6 +17,6 @@ complete <- function (directory,id)
    cid=c(cid,i)
    cnrow=c(cnrow,nrow(w))
   }
-  patientData <- data.frame(id=cid ,nodes=cnrow)
+  patientData <- data.frame(id=cid ,nobs=cnrow)
   patientData
 }
