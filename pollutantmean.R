@@ -16,18 +16,14 @@ pollutantmean <- function (directory,pollutant,id)
                 fill = TRUE)
    # print(x)
    # w = na.omit(x)
-    x1<-x[-1,]
-    
-    w=na.omit(x1)
-    View(w)
-    View(w[[pollutant]])
+    w=na.omit(x)
    # print(w$sulfate)
    # print(w)
     y = c(y,w[[pollutant]])
    # mean(y)
    #print(y)
   }
-  y1<-as.numeric(y)
+  #y1<-as.numeric(y)
   mean(y)
 }
 
